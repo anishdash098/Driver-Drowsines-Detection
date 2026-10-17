@@ -1,0 +1,14 @@
+#Copy Paste this, and press enter to instal and download the files in your System.
+
+% git clone https://github.com/anishdash098/Driver-Drowsines-Detection.git
+cd Driver-Drowsines-Detection
+
+# Install dependencies
+pip install tensorflow opencv-python pygame numpy
+
+------------------------------------------------------------------------
+
+#Copy paste this to run the pythoin file in terminal
+
+python run_mobilenet_detector.py
+
