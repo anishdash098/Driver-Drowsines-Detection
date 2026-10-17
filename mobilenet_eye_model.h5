@@ -53,3 +53,33 @@ history_eye = eye_model.fit(
 # 3. Save Model
 eye_model.save("mobilenet_eye_model.h5")
 print("\n🎉 Model 1 Complete! Saved as: mobilenet_eye_model.h5")
+
+
+--- 📥 Loading Eye Images ---
+📥 Loading Closed eyes from: eye_data/train/Closed_Eyes
+100%|██████████| 2000/2000 [00:01<00:00, 1263.46it/s]
+📥 Loading Open eyes from: eye_data/train/Open_Eyes
+100%|██████████| 2000/2000 [00:01<00:00, 1990.45it/s]
+Classes: ['Closed' 'Open']
+Total Eye Samples Loaded: 4000
+
+--- 🧠 Training MobileNetV2 on Eyes ---
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/mobilenet_v2/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_128_no_top.h5
+9406464/9406464 ━━━━━━━━━━━━━━━━━━━━ 0s 0us/step
+Epoch 1/12
+100/100 ━━━━━━━━━━━━━━━━━━━━ 18s 58ms/step - accuracy: 0.9891 - loss: 0.0336 - val_accuracy: 0.9987 - val_loss: 0.0056 - learning_rate: 5.0000e-04
+Epoch 2/12
+100/100 ━━━━━━━━━━━━━━━━━━━━ 2s 16ms/step - accuracy: 0.9997 - loss: 0.0019 - val_accuracy: 0.9987 - val_loss: 0.0021 - learning_rate: 5.0000e-04
+Epoch 3/12
+100/100 ━━━━━━━━━━━━━━━━━━━━ 2s 17ms/step - accuracy: 1.0000 - loss: 8.3345e-04 - val_accuracy: 1.0000 - val_loss: 0.0012 - learning_rate: 5.0000e-04
+Epoch 4/12
+100/100 ━━━━━━━━━━━━━━━━━━━━ 2s 16ms/step - accuracy: 0.9997 - loss: 8.2055e-04 - val_accuracy: 0.9987 - val_loss: 0.0014 - learning_rate: 5.0000e-04
+Epoch 5/12
+100/100 ━━━━━━━━━━━━━━━━━━━━ 2s 17ms/step - accuracy: 1.0000 - loss: 8.0474e-04 - val_accuracy: 0.9987 - val_loss: 0.0013 - learning_rate: 5.0000e-04
+Epoch 6/12
+100/100 ━━━━━━━━━━━━━━━━━━━━ 2s 16ms/step - accuracy: 1.0000 - loss: 5.4022e-04 - val_accuracy: 1.0000 - val_loss: 7.7883e-04 - learning_rate: 1.0000e-04
+Epoch 7/12
+100/100 ━━━━━━━━━━━━━━━━━━━━ 2s 16ms/step - accuracy: 1.0000 - loss: 2.1534e-04 - val_accuracy: 1.0000 - val_loss: 8.5155e-04 - learning_rate: 1.0000e-04
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+🎉 Model 1 Complete! Saved as: mobilenet_eye_model.h5
