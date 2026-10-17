@@ -8,7 +8,7 @@ pip install tensorflow opencv-python pygame numpy
 
 ------------------------------------------------------------------------
 
-#Copy paste this to run the pythoin file in terminal
+#Copy paste this to run the python file in terminal
 
 python run_mobilenet_detector.py
 
